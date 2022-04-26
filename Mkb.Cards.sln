@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mkb.Cards", "Mkb.Cards\Mkb.Cards.csproj", "{DA6661A6-F512-4092-9866-65C439A4E193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mkb.Cards.Test", "Mkb.Cards.Test\Mkb.Cards.Test.csproj", "{3AFD624E-C482-4BC5-B09C-3BF8828BE75D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA6661A6-F512-4092-9866-65C439A4E193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6661A6-F512-4092-9866-65C439A4E193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6661A6-F512-4092-9866-65C439A4E193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6661A6-F512-4092-9866-65C439A4E193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFD624E-C482-4BC5-B09C-3BF8828BE75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFD624E-C482-4BC5-B09C-3BF8828BE75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFD624E-C482-4BC5-B09C-3BF8828BE75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFD624E-C482-4BC5-B09C-3BF8828BE75D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
