@@ -7,17 +7,13 @@ namespace Mkb.Cards
 {
     public static class Functions
     {
-        internal static Random Random = new System.Random(Guid.NewGuid().GetHashCode());
+        internal static Random Random = new Random(Guid.NewGuid().GetHashCode());
+
+        public static IEnumerable<Card> GetCards() => Enum.GetValues(typeof(CardSuit)).Cast<CardSuit>()
+            .SelectMany(suitName =>
+                Enum.GetValues(typeof(CardValue)).Cast<CardValue>()
+                    .Select(cardValue => new Card(cardValue, suitName)));
         
-
-        public static IEnumerable<Card> GetCards()
-        {
-            return Enum.GetValues(typeof(CardSuit)).Cast<CardSuit>()
-                .SelectMany(suitName => 
-                    Enum.GetValues(typeof(CardValue)).Cast<CardValue>()
-                        .Select(cardValue => new Card(cardValue,suitName)));
-        }
-
         public static Deck BuildDeck()
         {
             return new Deck(GetCards());

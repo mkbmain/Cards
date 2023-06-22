@@ -1,5 +1,9 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 using Mkb.Cards.Enums;
 using Shouldly;
 using Xunit;
@@ -11,7 +15,11 @@ namespace Mkb.Cards.Test
         [Fact]
         public void Ensure_by_default_we_get_cards_back_in_order_submitted()
         {
-            var cards = new[] {new Card(CardValue.Ace, CardSuit.Club), new Card(CardValue.Two, CardSuit.Club), new Card(CardValue.Ten, CardSuit.Diamond), new Card(CardValue.Four, CardSuit.Spade)};
+            var cards = new[]
+            {
+                new Card(CardValue.Ace, CardSuit.Club), new Card(CardValue.Two, CardSuit.Club), new Card(CardValue.Ten, CardSuit.Diamond),
+                new Card(CardValue.Four, CardSuit.Spade)
+            };
 
             var deck = new Deck(cards);
 
@@ -29,7 +37,7 @@ namespace Mkb.Cards.Test
 
             var deck = new Deck(cards);
             bool eventFired = false;
-            deck.LastCardDrawnEvent += deck1 => { eventFired = true;};
+            deck.LastCardDrawnEvent += deck1 => { eventFired = true; };
             deck.Draw();
             eventFired.ShouldBeFalse();
             deck.Draw();
