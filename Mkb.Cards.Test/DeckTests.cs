@@ -17,7 +17,9 @@ namespace Mkb.Cards.Test
         {
             var cards = new[]
             {
-                new Card(CardValue.Ace, CardSuit.Club), new Card(CardValue.Two, CardSuit.Club), new Card(CardValue.Ten, CardSuit.Diamond),
+                new Card(CardValue.Ace, CardSuit.Club),
+                new Card(CardValue.Two, CardSuit.Club),
+                new Card(CardValue.Ten, CardSuit.Diamond),
                 new Card(CardValue.Four, CardSuit.Spade)
             };
 
